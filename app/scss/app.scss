@@ -1,0 +1,367 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+// @import "_mixins/font-face";
+
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+// @include foundation-typography;
+// @include foundation-button;
+// @include foundation-forms;
+// @include foundation-range-input;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-button-group;
+// @include foundation-callout;
+// @include foundation-card;
+// @include foundation-close-button;
+// @include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
+// @include foundation-responsive-embed;
+// @include foundation-label;
+// @include foundation-media-object;
+// @include foundation-off-canvas;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+// @include foundation-sticky;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
+// @include foundation-tabs;
+// @include foundation-thumbnail;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+@import "fonts";
+
+// HELPERS
+.hero {
+  font-family: 'Breuer Headline Oblique';
+}
+.breuer-text {
+  font-family: 'BreuerText-Bold';
+}
+
+.breuer-text-italic {
+  font-family: 'breuertext-bolditalic-webfont';
+}
+
+.lato-text {
+  font-family: 'LatoLatin-Regular', sans-serif;
+}
+
+.lato-text-bold {
+  font-family: 'LatoLatin-Bold', sans-serif;
+}
+.color-white {color: #fff;}
+.color-yellow {color: #ffcd00;}
+
+// MOBILE STYLE START;
+// body {
+//   font-size: 30px;
+//   font-family: 'Breuer Headline Oblique', sans-serif;
+//   font-family: 'breuertext-bolditalic-webfont', sans-serif;
+//   font-family: 'BreuerText-Bold', sans-serif;
+//   font-family: 'LatoLatin-Bold', sans-serif;
+//   font-family: 'LatoLatin-Regular', sans-serif;
+// }
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.top-section {
+  position: relative;
+  height: 182px;
+  background: url(../img/Mobile_Background2.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    bottom: -10px;
+    right: 0;
+    transform: skewY(-3deg);
+  }
+  .top-links {
+    text-align: justify;
+    padding: 10px 5px;
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      &.main-logo {
+        max-width: 32%;
+      }
+      &.already-customer-link {
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 9px;
+          text-transform: uppercase;
+          color: #fff;
+          font-family: 'LatoLatin-Regular', sans-serif;
+          line-height: 1;
+          text-shadow: 0px 1px 2px #064780;
+        }
+
+      }
+      .arrow {
+        max-height: 11px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 13px;
+        margin-left: -1px;
+      }
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+}
+
+.content {
+  background: linear-gradient( #fff, #d8d8d8);
+  position: relative;
+  .badge {
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(to right, #184f77, #2f8ab7);
+    border: solid 3px #ffcc00;
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+
+    @include horizontal-center;
+    span {
+      display: block;
+      &.date {
+        @include absolute-center;
+        font-size: 48px;
+        font-family: 'Breuer Headline Oblique', sans-serif;
+        color: #ffcc00;
+        line-height: 0;
+        margin-top: -2px;
+      }
+    }
+  }
+  .main-text {
+
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 36px;
+    text-align: center;
+    .new-customer-offer {
+      display: inline-block;
+      background: linear-gradient(to right, #184f77, #2f8ab7);
+      transform: skewX(-10deg);
+      padding: 3px 6px;
+      line-height: 1;
+      font-size: 11px;
+    }
+    .title {
+      h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 28px;
+        span {
+          display: block;
+          &:last-child {
+            font-size: 20px;
+            line-height: 18px;
+          }
+        }
+    background-image: -webkit-linear-gradient(left, #184f77, #2e89b6);
+    background-image: -moz-linear-gradient(left, #184f77, #2e89b6);
+    background-image: -ms-linear-gradient(left, #184f77, #2e89b6);
+    background-image: -o-linear-gradient(left, #184f77, #2e89b6);
+    background-image: linear-gradient(to right, #184f77, #2e89b6);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+      }
+    }
+    .description {
+      padding: 0px 5px 5px;
+      margin-top: 5px;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      transform: skewX(-5deg);
+      background: linear-gradient(to right, #184f77, #2f8ab7);
+      .one {
+        font-size: 12px;
+        line-height: 1;
+        margin: 5px 0;
+      }
+      .two {
+        font-size: 14px;
+        line-height: 1;
+      }
+      .three {
+        font-size: 10px;
+        line-height: 1;
+      }
+    }
+    .forms {
+      position: relative;
+      z-index: 2;
+      input {
+        background: linear-gradient( #d7d7d7, #fff);
+        padding: 5px 0px 5px 5px;
+        border: solid 1px silver;
+        box-shadow: none;
+        max-width: 160px;
+        font-size: 12px;
+      }
+      button {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 21px;
+        padding: 12px 30px;
+        background-color: #61c900;
+        transform: skewX(-10deg);
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          &:last-child {
+            letter-spacing: -2px;
+            font-size: 22px;
+          }
+        }
+      }
+      p {
+        font-size: 8px;
+        text-transform: none;
+        margin-top: 5px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.steps-register {
+  margin-top: -32px;
+  position: relative;
+  padding: 50px 0 40px;
+  z-index: 1;
+  background: linear-gradient(to right, #184f77, #2f8ab7);
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background: linear-gradient(to right, #184f77, #2f8ab7);
+    top: -8px;
+    right: 0;
+    transform: skewY(-3deg);
+  }
+  .step {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    .inner {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 12px;
+      .bord {
+      text-decoration: underline;
+      }
+      &:last-child {
+        span {
+          display: block;
+          line-height: 15px;
+        }
+      }
+      &:first-child {
+        margin-right: 16px;
+        text-align: center;
+        font-size: 22px;
+        width: 34px;
+        height: 34px;
+        border: solid 2px #ffcd00;
+        color: #ffcd00;
+        border-radius: 50%;
+        line-height: 31px;
+        font-family: arial, sans-serif;
+      }
+    }
+  }
+}
+
+.terms-conditions {
+  padding: 35px 0;
+  position: relative;
+  background-color: #054179;
+  color: #7695b1;
+  .terms {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+    a {
+      color: #7695b1;
+      text-decoration: none;
+    }
+  }
+  .hidden-text {
+    position: relative;
+    margin-top: 30px;
+    padding: 0 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MOBILE STYLE END

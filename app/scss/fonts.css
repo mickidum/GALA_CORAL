@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Breuer Headline Oblique";
+  src: url("../fonts/BreuerHeadline-Oblique.eot");
+  src: url("../fonts/BreuerHeadline-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/BreuerHeadline-Oblique.woff") format("woff"), url("../fonts/BreuerHeadline-Oblique.ttf") format("truetype"), url("../fonts/BreuerHeadline-Oblique.svg#Breuer Headline Oblique") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "BreuerText-Bold";
+  src: url("../fonts/BreuerText-Bold.eot");
+  src: url("../fonts/BreuerText-Bold.eot?#iefix") format("embedded-opentype"),  url("../fonts/BreuerText-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "breuertext-bolditalic-webfont";
+  src: url("../fonts/breuertext-bolditalic-webfont.eot");
+  src: url("../fonts/breuertext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/breuertext-bolditalic-webfont.woff2") format("woff2"), url("../fonts/breuertext-bolditalic-webfont.ttf") format("truetype"), url("../fonts/breuertext-bolditalic-webfont.svg#breuertext-bolditalic-webfont") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "LatoLatin-Bold";
+  src: url("../fonts/LatoLatin-Bold.eot");
+  src: url("../fonts/LatoLatin-Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/LatoLatin-Bold.woff2") format("woff2"), url("../fonts/LatoLatin-Bold.woff") format("woff"), url("../fonts/LatoLatin-Bold.ttf") format("truetype"), url("../fonts/LatoLatin-Bold.svg#LatoLatin-Bold") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "LatoLatin-Regular";
+  src: url("../fonts/LatoLatin-Regular.eot");
+  src: url("../fonts/LatoLatin-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/LatoLatin-Regular.woff2") format("woff2"), url("../fonts/LatoLatin-Regular.woff") format("woff"), url("../fonts/LatoLatin-Regular.ttf") format("truetype"), url("../fonts/LatoLatin-Regular.svg#LatoLatin-Regular") format("svg");
+  font-style: normal;
+  font-weight: normal; }
